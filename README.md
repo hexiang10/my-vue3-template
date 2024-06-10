@@ -32,6 +32,5 @@
 
 ## 图片图标
 
-- picsum：https://picsum.photos/（图片测试集）
-- lordicon：https://lordicon.com/icons（好用的图标库）
-
+- picsum（图片测试集）：https://picsum.photos/
+- lordicon（好用的图标库）：https://lordicon.com/icons
