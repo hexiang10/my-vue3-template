@@ -28,10 +28,10 @@ export default {
   },
 
   // 操作成功消息提醒内容
-  notifyOK(msg, cb) {
+  notifyOK(title = 'OK', msg = '', cb) {
     ElNotification({
-      title: '成功',
-      message: msg || '操作成功！',
+      title: title,
+      message: msg,
       type: 'success',
       duration: 2000,
       onClose: function () {
@@ -43,7 +43,7 @@ export default {
   showLoading(msg) {
     return ElLoading.service({
       lock: true,
-      text: msg ||'Loading',
+      text: msg || 'Loading',
       background: 'rgba(0, 0, 0, 0.7)',
     })
   },

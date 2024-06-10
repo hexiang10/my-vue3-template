@@ -32,6 +32,7 @@ const http = new AxiosApi({
     responseInterceptorCatch: (err) => {
       if (err.config?.mock) return mock.request(err.config)
       handler.codeHandler(err?.response?.status, err.message)
+      throw err
     },
   },
 })
