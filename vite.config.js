@@ -40,7 +40,7 @@ export default defineConfig(({ mode }) => {
       // 自定义中间件
       middleware: [],
       // 是否开启自动刷新
-      // hmr: true,
+      hmr: true,
       // 是否开启自动打开浏览器
       open: false,
     },
@@ -89,15 +89,6 @@ export default defineConfig(({ mode }) => {
         exclude: ['**/components/*.vue'], // 排除在外的目录，即不将所有 components 目录下的 .vue 文件生成路由
       }),
     ],
-    //scss全局变量一个配置
-    // css: {
-    //   preprocessorOptions: {
-    //     scss: {
-    //       additionalData: '@import "@/styles/mixin.scss";',
-    //     },
-    //   },
-    // },
-    // 强制预构建插件包
     optimizeDeps: {
       exclude: ['third-party-cookie-lib'],
       //检测需要预构建的依赖项
