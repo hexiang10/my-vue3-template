@@ -7,16 +7,21 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    401Demo01: typeof import('./components/template/error-page/401/401-demo-01.vue')['default']
+    BaiduDemo: typeof import('./components/template/web-page/baidu-demo.vue')['default']
+    Demo01: typeof import('./components/template/error-page/500/demo-01.vue')['default']
+    Demo02: typeof import('./components/template/error-page/404/demo-02.vue')['default']
+    Demo40101: typeof import('./components/template/error-page/401/demo-401-01.vue')['default']
+    Demo40401: typeof import('./components/template/error-page/404/demo-404-01.vue')['default']
+    Demo40402: typeof import('./components/template/error-page/404/demo-404-02.vue')['default']
+    Demo50001: typeof import('./components/template/error-page/500/demo-500-01.vue')['default']
     ElBacktop: typeof import('element-plus/es')['ElBacktop']
-    ElButton: typeof import('element-plus/es')['ElButton']
     ElCard: typeof import('element-plus/es')['ElCard']
-    ElCol: typeof import('element-plus/es')['ElCol']
-    ElDivider: typeof import('element-plus/es')['ElDivider']
-    ElLink: typeof import('element-plus/es')['ElLink']
-    ElRow: typeof import('element-plus/es')['ElRow']
-    IEpArrowLeft: typeof import('~icons/ep/arrow-left')['default']
     MySeamless: typeof import('./components/common/MySeamless.vue')['default']
+    NavbarDemo01: typeof import('./components/template/navbar/navbar-demo-01.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    SignaturePad: typeof import('./components/template/card/signature-pad.vue')['default']
+    TextCard: typeof import('./components/template/card/text-card.vue')['default']
   }
 }

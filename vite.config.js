@@ -97,5 +97,12 @@ export default defineConfig(({ mode }) => {
       include: ['axios'],
     },
     build: {},
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@import "@/style/mixin.scss";',
+        },
+      },
+    },
   }
 })
